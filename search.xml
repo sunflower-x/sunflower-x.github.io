@@ -13,4 +13,60 @@
         <tag>aaaa</tag>
       </tags>
   </entry>
+  <entry>
+    <title>使用Github和Hexo搭建个人博客</title>
+    <url>/2023/03/10/%E4%BD%BF%E7%94%A8Github%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="为什么要搭建博客"><a href="#为什么要搭建博客" class="headerlink" title="为什么要搭建博客?"></a>为什么要搭建博客?</h3><ul>
+<li>好记性不如烂笔头,在互联网时代,面对于如此多的信息输入,我们也应该有输出;对于学习到的知识点也应该总结出来,所以有一个博客可以让你对知识点进行总结,也更加方便我们后期回顾</li>
+</ul>
+<h3 id="如何搭建"><a href="#如何搭建" class="headerlink" title="如何搭建?"></a>如何搭建?</h3><ul>
+<li>对于搭建博客网络上的教程五花八门,用到的技术也不同,我在这里使用的是成本最低的方式:<code>Github</code>+<code>Hexo</code></li>
+</ul>
+<h3 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h3><ol>
+<li><p>使用到的技术<code>git</code>,<code>nodejs</code>,<code>npm</code></p>
+</li>
+<li><p>首先我们要有一个<code>Github</code>账号,创建一个仓库取名为:<code>账号名.github.io</code></p>
+</li>
+<li><p>安装hexo</p>
+<blockquote>
+<p>npm install hexo -g</p>
+</blockquote>
+</li>
+<li><p>创建博客目录,切换到当前目录进行初始化</p>
+<blockquote>
+<p>hexo init</p>
+</blockquote>
+</li>
+<li><p>找到站点配置文件配置</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy</span>:</span><br><span class="line">	<span class="attr">type</span>: git</span><br><span class="line">	<span class="attr">repository</span>: 前面创建仓库的地址</span><br><span class="line">  	<span class="attr">branch</span>: main</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>继续在该博客目录下执行部署命令</p>
+<blockquote>
+<p>npm install hexo-deployer-git –save</p>
+</blockquote>
+</li>
+<li><p>命令介绍</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//清理缓存 hexo clean</span></span><br><span class="line"><span class="comment">//新建文章 hexo n &#x27;title&#x27;</span></span><br><span class="line"><span class="comment">//生成文件 hexo g</span></span><br><span class="line"><span class="comment">//本地部署 hexo s</span></span><br><span class="line"><span class="comment">//部署到远程 hexo d</span></span><br><span class="line"><span class="comment">//可以先部署到本地预览,没有发现问题后就部署到github上面</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="关于主题"><a href="#关于主题" class="headerlink" title="关于主题"></a>关于主题</h3><ul>
+<li><p>我们可以安装一些主题来美化博客,推荐两种方案:<code>Butterfly</code>和<code>NexT</code>,这里介绍NexT的使用方式</p>
+<p><strong>NexT的使用</strong></p>
+<ol>
+<li><p>在博客目录下克隆NexT到themes&#x2F;next文件夹</p>
+<blockquote>
+<p>git clone <a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes&#x2F;next</p>
+</blockquote>
+</li>
+<li><p>然后在站点配置文件_config.yml配置,将Hexo主题替换为NexT主题</p>
+<blockquote>
+<p>theme: next</p>
+</blockquote>
+</li>
+<li><p>在NexT里面还有很多配置,可以去官网了解:<a href="https://theme-next.iissnan.com/">NexT</a></p>
+</li>
+</ol>
+</li>
+</ul>
+]]></content>
+  </entry>
 </search>

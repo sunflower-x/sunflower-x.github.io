@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":260,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="太阳花">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="为什么要搭建博客? 好记性不如烂笔头,在互联网时代,面对于如此多的信息输入,我们也应该有输出;对于学习到的知识点也应该总结出来,所以有一个博客可以让你对知识点进行总结,也更加方便我们后期回顾  如何搭建? 对于搭建博客网络上的教程五花八门,用到的技术也不同,我在这里使用的是成本最低的方式:Github+Hexo  开始搭建 使用到的技术git,nodejs,npm  首先我们要有一个Github账">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Github和Hexo搭建个人博客">
+<meta property="og:url" content="http://example.com/2023/03/10/%E4%BD%BF%E7%94%A8Github%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="太阳花">
+<meta property="og:description" content="为什么要搭建博客? 好记性不如烂笔头,在互联网时代,面对于如此多的信息输入,我们也应该有输出;对于学习到的知识点也应该总结出来,所以有一个博客可以让你对知识点进行总结,也更加方便我们后期回顾  如何搭建? 对于搭建博客网络上的教程五花八门,用到的技术也不同,我在这里使用的是成本最低的方式:Github+Hexo  开始搭建 使用到的技术git,nodejs,npm  首先我们要有一个Github账">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-10T11:39:52.000Z">
+<meta property="article:modified_time" content="2023-03-10T11:43:40.912Z">
 <meta property="article:author" content="Thomas">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/03/10/%E4%BD%BF%E7%94%A8Github%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>太阳花</title>
+  <title>使用Github和Hexo搭建个人博客 | 太阳花</title>
   
 
 
@@ -182,9 +186,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -200,10 +205,9 @@
       <meta itemprop="name" content="太阳花">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/03/10/%E4%BD%BF%E7%94%A8Github%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">使用Github和Hexo搭建个人博客</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          使用Github和Hexo搭建个人博客
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -227,7 +231,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="为什么要搭建博客"><a href="#为什么要搭建博客" class="headerlink" title="为什么要搭建博客?"></a>为什么要搭建博客?</h3><ul>
+        <h3 id="为什么要搭建博客"><a href="#为什么要搭建博客" class="headerlink" title="为什么要搭建博客?"></a>为什么要搭建博客?</h3><ul>
 <li>好记性不如烂笔头,在互联网时代,面对于如此多的信息输入,我们也应该有输出;对于学习到的知识点也应该总结出来,所以有一个博客可以让你对知识点进行总结,也更加方便我们后期回顾</li>
 </ul>
 <h3 id="如何搭建"><a href="#如何搭建" class="headerlink" title="如何搭建?"></a>如何搭建?</h3><ul>
@@ -279,90 +283,30 @@
 </li>
 </ul>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/10/%E4%BB%8B%E7%BB%8D/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Thomas">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="太阳花">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/03/10/%E4%BB%8B%E7%BB%8D/" class="post-title-link" itemprop="url">介绍</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-03-10 14:59:36 / 修改时间：15:34:43" itemprop="dateCreated datePublished" datetime="2023-03-10T14:59:36+08:00">2023-03-10</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/sklfla/" itemprop="url" rel="index"><span itemprop="name">sklfla</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h3><p>fjlsafjlsfjls</p>
-<h3 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h3><p>sljflsfjlsfk</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/03/10/%E4%BB%8B%E7%BB%8D/" rel="prev" title="介绍">
+      <i class="fa fa-chevron-left"></i> 介绍
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -415,6 +359,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.</span> <span class="nav-text">为什么要搭建博客?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">如何搭建?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA"><span class="nav-number">3.</span> <span class="nav-text">开始搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%B8%BB%E9%A2%98"><span class="nav-number">4.</span> <span class="nav-text">关于主题</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
