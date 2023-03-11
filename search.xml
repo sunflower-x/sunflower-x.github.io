@@ -19,6 +19,8 @@
     <content><![CDATA[<h3 id="为什么要搭建博客"><a href="#为什么要搭建博客" class="headerlink" title="为什么要搭建博客?"></a>为什么要搭建博客?</h3><ul>
 <li>好记性不如烂笔头,在互联网时代,面对于如此多的信息输入,我们也应该有输出;对于学习到的知识点也应该总结出来,所以有一个博客可以让你对知识点进行总结,也更加方便我们后期回顾</li>
 </ul>
+<span id="more"></span>
+
 <h3 id="如何搭建"><a href="#如何搭建" class="headerlink" title="如何搭建?"></a>如何搭建?</h3><ul>
 <li>对于搭建博客网络上的教程五花八门,用到的技术也不同,我在这里使用的是成本最低的方式:<code>Github</code>+<code>Hexo</code></li>
 </ul>
